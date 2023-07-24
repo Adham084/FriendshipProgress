@@ -23,9 +23,9 @@ namespace FriendshipProgress
         public static void DrawNPCSlotPostfix(SpriteBatch b, int i, SocialPage __instance, List<ClickableTextureComponent> ___sprites)
         {
             b.DrawString(
-                Game1.dialogueFont,
+                Game1.smallFont,
                 "Current Heart: " + (Game1.player.friendshipData[(string)__instance.names[i]].Points % 250) + "/250",
-                new Vector2(__instance.xPositionOnScreen + 316, ___sprites[i].bounds.Y + 8),
+                new Vector2(__instance.xPositionOnScreen + 316, ___sprites[i].bounds.Y + 4),
                 Game1.textColor
             );
         }
